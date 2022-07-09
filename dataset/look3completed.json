@@ -1,0 +1,12 @@
+{
+	"name": "look3completed",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
