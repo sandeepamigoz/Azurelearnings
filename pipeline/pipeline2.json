@@ -32,6 +32,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -211,6 +212,13 @@
 									"type": "AzureSqlSource",
 									"sqlReaderStoredProcedureName": "[dbo].[sp_updategetlaststatus]",
 									"storedProcedureParameters": {
+										"filename": {
+											"type": "String",
+											"value": {
+												"value": "@activity('Lookup1').output",
+												"type": "Expression"
+											}
+										},
 										"pipelinename": {
 											"type": "String",
 											"value": {
